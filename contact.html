@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="CSS/register.css">
+</head>
+
+<script src="https://kit.fontawesome.com/9bf471efc5.js" crossorigin="anonymous"></script>
+
+<body>
+    <header>
+        <div class="container">
+            <p class="logo"> <-EnCode> </p>
+            <nav>
+                <a href="index.html">Home</a>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="sucursales">
+        <div class="container">
+            <div class="sitios">
+                <div class="carta">
+                    <h3>CONTACTS</h3>
+                    <h4>PHONE NUMBER</h4>
+                    <p><i class="fa fa-phone" aria-hidden="true"></i> 1234-567890</p>
+                    <h4>FAX</h4>
+                    <p><i class="fa fa-fax" aria-hidden="true"></i> 0987-654321</p>
+                    <h4>EMAIL</h4>
+                    <p><i class="fa fa-envelope" aria-hidden="true"></i> contact-us@encode.com </p>
+                   
+                </div>
+                <div class="carta">
+                    <h3>OFFICES</h3>
+                    <h4>Punta Alta: <a href="https://www.google.com.ar/maps/place/Bernardo+de+Irigoyen+500,+Punta+Alta,+Provincia+de+Buenos+Aires/@-38.8810773,-62.077983,17z/data=!3m1!4b1!4m5!3m4!1s0x95ed9d581d87dbc3:0x519580f911165fd2!8m2!3d-38.8810815!4d-62.0757943">Bdo. de Irigoyen 500.</a></h4><br>
+                    <div class="video-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.876063449522!2d-62.07798298489823!3d-38.881077303634825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95ed9d581d87dbc3%3A0x519580f911165fd2!2sBernardo%20de%20Irigoyen%20500%2C%20Punta%20Alta%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1647888747770!5m2!1ses!2sar" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <h4>Bahia Blanca: <a href="https://www.google.com.ar/maps/place/Fuerte+Argentino+900,+B8000+Bah%C3%ADa+Blanca,+Provincia+de+Buenos+Aires/@-38.6991649,-62.2672076,17z/data=!3m1!4b1!4m5!3m4!1s0x95edbb52f2f959b5:0x2afc31d71e6c383d!8m2!3d-38.6991691!4d-62.2650189">Fuerte Argentino 900.</a></h4><br>
+                        <div class="video-container">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.8118963979036!2d-62.267207584905066!3d-38.699164892993366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95edbb52f2f959b5%3A0x2afc31d71e6c383d!2sFuerte%20Argentino%20900%2C%20B8000%20Bah%C3%ADa%20Blanca%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1647888951661!5m2!1ses!2sar" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                </div>
+                <div class="carta">
+                    <h3>REGISTRATION FORM</h3>
+                    <form id="form" action="https://formspree.io/f/xqknnqjw" method="POST">
+                        <section class="registro">
+                            <input class="control" type="text" name="nombres" id="nombres" placeholder="Enter your name..." required>
+                            <input class="control" type="text" name="apellido" id="apellido" placeholder="Enter your last name..." aria-required="">
+                            <input class="control" type="email" name="email" id="correo" placeholder="Enter your email...">
+                            <input class="control" type="pasword" name="password" id="password" placeholder="Enter your password..." required>
+                            <input type="checkbox"> <a href="#"> "I agree with the terms and conditions"</a>
+                            <input class="button" type="submit" value="Submit" onclick="validarCorreo(document.getElementById('correo').value)" required>
+                            <p><a href="#">I have an account</a></p>
+                        </section>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <aside>
+       
+    </aside>
+
+    <footer>
+        <div class="foot">
+            <div class="social">
+                <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-square" aria-hidden="true" style="color:white"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter-square" aria-hidden="true" style="color:white"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram-square" aria-hidden="true" style="color:white"></i></a>
+                <a href="htpps://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin" aria-hidden="true" style="color:white"></i></a>
+                <a href="https://www.pinterest.com" target="_blank"><i class="fa-brands fa-pinterest-square" aria-hidden="true" style="color:white"></i></a>      
+            </div>
+            <p>&copy; <-EnCode> - Inglés Comercial 2023</p>
+        </div>
+    </footer>
+ <script src="scripts.js"></script>   
+</body>
+</html>
